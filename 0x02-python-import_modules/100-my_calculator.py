@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     for op in ops:
         if sys.argv[2] == op:
-            print(f"{a} {op} {b} = {ops[op](a, b)}")
+            print(f"{a:d} {op} {b:d} = {ops[op](a, b):d}")
             break
     else:
         print("Unknown operator. Available operators: +, -, * and /")
