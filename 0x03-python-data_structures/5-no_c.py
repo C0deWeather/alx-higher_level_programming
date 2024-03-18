@@ -10,10 +10,8 @@ def no_c(my_string):
     Returns:
     str: a new string without the removed chars
     """
-    i = 0
-    mod_list = list(my_string)
-    for char in mod_list:
-        if char in "cC":
-            del mod_list[i]
-        i += 1
-    return "".join(mod_list)
+    new_string = ""
+    for c in my_string:
+        if c not in 'cC':
+            new_string += c
+    return new_string
