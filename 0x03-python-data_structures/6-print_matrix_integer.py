@@ -15,4 +15,3 @@ def print_matrix_integer(matrix=[[]]):
                 # Otherwise, print with a space
                 print("{:d}".format(row[i]), end=" ")
         print()  # Move to the next line after printing each row
-
