@@ -5,7 +5,7 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
 
     if len(sys.argv) - 1 != 3:
-        print(f"Usage: ./100-calculator.py <a> <operator> <b>")
+        print(f"Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
 
     ops = {'+': add, '-': sub, '*': mul, '/': div}
