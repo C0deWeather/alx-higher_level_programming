@@ -1,0 +1,30 @@
+#This text file contains tests for add_integer()
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(2, 3)
+5
+
+>>> add_integer(-1, 0)
+-1
+
+>>> add_integer('two')
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(4, [1])
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer(1.5)
+99
+
+>>> add_integer(2.5, 5.8)
+7
+
+>>> add_integer(None)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(1983500.999)
+1983598
