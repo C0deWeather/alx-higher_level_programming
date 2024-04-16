@@ -8,4 +8,4 @@ def read_file(filename=""):
     """Reads a text file and prints to stdout"""
     with open(filename, 'r') as file:
         content = file.read()
-        print(content)
+        print(content, end='')
