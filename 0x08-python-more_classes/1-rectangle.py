@@ -20,6 +20,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Sets the value of width"""
+        print(f"It is {isinstance(value, int)} that {value} is an int")
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value < 0:
