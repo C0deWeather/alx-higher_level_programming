@@ -84,3 +84,14 @@ class Rectangle(Base):
         print('\n' * self.y, end="")
         for j in range(self.height):
             print(' ' * self.x + '#' * self.width)
+
+    def update(self, *args):
+        """Updates attributes of rectangle"""
+        try:
+            self.id = args[0]
+            self.width = args[1]
+            self.height = args[2]
+            self.x = args[3]
+            self.y = args[4]
+        except IndexError:
+            pass
