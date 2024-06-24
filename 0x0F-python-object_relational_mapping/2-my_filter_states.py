@@ -16,7 +16,7 @@ if __name__ == "__main__":
             password=password,
             database=db_name)
         cur = db_obj.cursor()
-        query = "select * from states where name = '{}'".format(state)
+        query = "select * from states where binary name = '{}'".format(state)
         cur.execute(query)
         rows = cur.fetchall()
         for row in rows:
