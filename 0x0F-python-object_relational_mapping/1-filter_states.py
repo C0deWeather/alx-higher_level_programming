@@ -15,7 +15,7 @@ if __name__ == "__main__":
             password=password,
             database=db_name)
         cur = db_obj.cursor()
-        cur.execute("select * from states where name like 'N%'")
+        cur.execute("select * from states where binary name like 'N%'")
         rows = cur.fetchall()
         for row in rows:
             print(row)
