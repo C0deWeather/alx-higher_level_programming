@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""This module connects to a mysql database
+a makes a query to retrieve data"""
 import MySQLdb
 import sys
 
