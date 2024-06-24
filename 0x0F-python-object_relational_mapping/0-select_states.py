@@ -6,6 +6,7 @@ import sys
 
 
 def main():
+    """entry point"""
     username = sys.argv[1]
     password = sys.argv[2]
     db_name = sys.argv[3]
