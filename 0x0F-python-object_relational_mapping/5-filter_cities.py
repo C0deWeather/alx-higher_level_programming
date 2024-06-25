@@ -22,6 +22,8 @@ if __name__ == "__main__":
                 where binary states.name = %s"
         cur.execute(query, (state,))
         rows = cur.fetchall()
+        if (not state or not cur.rowcount):
+            print()
         i = 0
         for row in rows:
             i += 1
@@ -32,5 +34,6 @@ if __name__ == "__main__":
                 break
     except MySQLdb.Error as e:
         pass
+
     cur.close()
     db_obj.close()
