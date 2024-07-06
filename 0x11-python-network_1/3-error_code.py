@@ -4,6 +4,7 @@ the body of the response"""
 
 if __name__ == '__main__':
     import sys
+    import urllib.error
     import urllib.request
 
     try:
