@@ -8,10 +8,12 @@ if __name__ == '__main__':
 
     username = sys.argv[1]
     password = sys.argv[2]
-    
-    headers = {"Accept": "application/vnd.github+json", 
-                "Authorization": f"Bearer {password}",
-                "X-GitHub-Api-Version": "2022-11-28"}
+
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "Authorization": f"Bearer {password}",
+        "X-GitHub-Api-Version": "2022-11-28"
+    }
     url = 'https://api.github.com/user'
 
     response = requests.get(url, headers=headers)
@@ -20,5 +22,3 @@ if __name__ == '__main__':
         print(data.get('id'))
     else:
         pass
-
-
