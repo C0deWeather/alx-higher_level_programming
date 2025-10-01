@@ -15,7 +15,9 @@ def remove_char_at(str, n):
     new_list = []
 
     for char in l_str:
-        if l_str[n] == char:
+        if n >= len(l_str) or n < 0:
+            return "".join(l_str)
+        elif l_str[n] == char:
             continue
         else:
             new_list.append(char)
